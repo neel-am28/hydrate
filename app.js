@@ -45,7 +45,7 @@ function updateBeaker() {
     const totalGlasses = glasses.length
 
     remained.style.visibility = 'visible'
-    litresRemaining.textContent = `${(2 - (250 * fullGlasses / 1000)).toFixed(2)}L`
+    litresRemaining.textContent = `${fullGlasses / totalGlasses * 100}%`
 
     if (fullGlasses === 0) {
         beakerFull.style.visibility = 'hidden'
